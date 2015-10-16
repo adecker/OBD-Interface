@@ -14001,7 +14001,6 @@ Source: www.cypressindustries.com</description>
 <part name="R20" library="passives" deviceset="R" device="0603" value="100k"/>
 <part name="R21" library="passives" deviceset="R" device="0603" value="100k"/>
 <part name="R22" library="passives" deviceset="R" device="0603" value="100k"/>
-<part name="R23" library="passives" deviceset="R" device="0603" value="0 (NOPOP)"/>
 <part name="U5" library="SparkFun-Connectors" deviceset="USD-SOCKET" device="USD"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
@@ -14033,10 +14032,9 @@ Source: www.cypressindustries.com</description>
 <part name="C39" library="passives" deviceset="C" device="0603" value="0.1uF"/>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X6" device="CLEAN"/>
 <part name="U$3" library="OBD-Interface" deviceset="SAM4C32C-100" device=""/>
-<part name="C30" library="passives" deviceset="C" device="0603" value="100 nF"/>
-<part name="C31" library="passives" deviceset="C" device="0603" value="100 nF"/>
-<part name="C34" library="passives" deviceset="C" device="0603" value="100 nF"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="C12" library="adafruit" deviceset="C-US" device="C0805"/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14119,8 +14117,8 @@ Source: www.cypressindustries.com</description>
 <instance part="C26" gate="A" x="45.72" y="-10.16" rot="R270"/>
 <instance part="C27" gate="A" x="50.8" y="-10.16" rot="R270"/>
 <instance part="C28" gate="A" x="55.88" y="-10.16" rot="R270"/>
-<instance part="C29" gate="A" x="60.96" y="-10.16" rot="R270"/>
-<instance part="GND26" gate="1" x="60.96" y="-20.32"/>
+<instance part="C29" gate="A" x="63.5" y="-10.16" rot="R270"/>
+<instance part="GND26" gate="1" x="63.5" y="-20.32"/>
 <instance part="JP1" gate="G$1" x="185.42" y="-20.32" rot="MR0"/>
 <instance part="+3V3" gate="G$1" x="175.26" y="2.54"/>
 <instance part="GND27" gate="1" x="175.26" y="-38.1"/>
@@ -14129,11 +14127,9 @@ Source: www.cypressindustries.com</description>
 <instance part="R20" gate="A" x="210.82" y="-7.62" rot="R90"/>
 <instance part="R21" gate="A" x="215.9" y="-7.62" rot="R90"/>
 <instance part="R22" gate="A" x="220.98" y="-7.62" rot="R90"/>
-<instance part="R23" gate="A" x="208.28" y="-27.94"/>
 <instance part="U$3" gate="G$1" x="-12.7" y="-20.32"/>
-<instance part="C30" gate="A" x="60.96" y="-10.16" rot="R270"/>
-<instance part="C31" gate="A" x="60.96" y="-10.16" rot="R270"/>
-<instance part="C34" gate="A" x="60.96" y="-10.16" rot="R270"/>
+<instance part="C12" gate="G$1" x="27.94" y="104.14"/>
+<instance part="GND28" gate="1" x="27.94" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -14272,8 +14268,7 @@ Source: www.cypressindustries.com</description>
 <wire x1="40.64" y1="-15.24" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-15.24" x2="50.8" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-15.24" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-15.24" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-15.24" x2="60.96" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-15.24" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="C28" gate="A" pin="2"/>
 <wire x1="55.88" y1="-12.7" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="C27" gate="A" pin="2"/>
@@ -14284,17 +14279,14 @@ Source: www.cypressindustries.com</description>
 <wire x1="40.64" y1="-12.7" x2="40.64" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="C24" gate="A" pin="2"/>
 <wire x1="30.48" y1="-12.7" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-15.24" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-15.24" x2="63.5" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <junction x="30.48" y="-15.24"/>
 <junction x="40.64" y="-15.24"/>
 <junction x="45.72" y="-15.24"/>
 <junction x="50.8" y="-15.24"/>
 <junction x="55.88" y="-15.24"/>
-<pinref part="C30" gate="A" pin="2"/>
-<junction x="60.96" y="-12.7"/>
-<pinref part="C31" gate="A" pin="2"/>
-<pinref part="C34" gate="A" pin="2"/>
+<wire x1="63.5" y1="-15.24" x2="63.5" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="20"/>
@@ -14333,6 +14325,11 @@ Source: www.cypressindustries.com</description>
 <junction x="175.26" y="-20.32"/>
 <junction x="175.26" y="-17.78"/>
 <junction x="175.26" y="-15.24"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="27.94" y1="99.06" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VFB2" class="0">
@@ -14558,7 +14555,7 @@ Source: www.cypressindustries.com</description>
 <label x="63.5" y="88.9" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="VIN1_2"/>
 <wire x1="66.04" y1="129.54" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
@@ -14590,9 +14587,13 @@ Source: www.cypressindustries.com</description>
 <wire x1="66.04" y1="119.38" x2="60.96" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="119.38" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
 <junction x="50.8" y="129.54"/>
-<wire x1="38.1" y1="129.54" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="129.54" x2="27.94" y2="129.54" width="0.1524" layer="91"/>
 <junction x="38.1" y="129.54"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="129.54" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="106.68" x2="27.94" y2="129.54" width="0.1524" layer="91"/>
+<junction x="27.94" y="129.54"/>
 </segment>
 </net>
 <net name="VDDOUT" class="0">
@@ -14610,8 +14611,7 @@ Source: www.cypressindustries.com</description>
 <wire x1="40.64" y1="-5.08" x2="45.72" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-5.08" x2="50.8" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-5.08" x2="55.88" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-5.08" x2="60.96" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-5.08" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="C23" gate="A" pin="1"/>
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="C24" gate="A" pin="1"/>
@@ -14634,10 +14634,7 @@ Source: www.cypressindustries.com</description>
 <pinref part="U$3" gate="G$1" pin="VDDCORE"/>
 <pinref part="U$3" gate="G$1" pin="VDDOUT"/>
 <pinref part="U$3" gate="G$1" pin="VDDPLL"/>
-<pinref part="C30" gate="A" pin="1"/>
-<junction x="60.96" y="-7.62"/>
-<pinref part="C31" gate="A" pin="1"/>
-<pinref part="C34" gate="A" pin="1"/>
+<wire x1="63.5" y1="-5.08" x2="63.5" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDDLCD" class="0">
@@ -14729,10 +14726,10 @@ Source: www.cypressindustries.com</description>
 <pinref part="R22" gate="A" pin="1"/>
 <wire x1="220.98" y1="-27.94" x2="220.98" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="-27.94" x2="231.14" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R23" gate="A" pin="2"/>
-<wire x1="210.82" y1="-27.94" x2="220.98" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="220.98" y="-27.94"/>
 <label x="231.14" y="-27.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="15"/>
+<wire x1="193.04" y1="-27.94" x2="220.98" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="5.08" y1="-30.48" x2="10.16" y2="-30.48" width="0.1524" layer="91"/>
@@ -14742,13 +14739,6 @@ Source: www.cypressindustries.com</description>
 <wire x1="10.16" y1="-35.56" x2="17.78" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="10.16" y="-30.48"/>
 <pinref part="U$3" gate="G$1" pin="NRST"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="15"/>
-<pinref part="R23" gate="A" pin="1"/>
-<wire x1="193.04" y1="-27.94" x2="205.74" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TDO" class="0">
@@ -14943,7 +14933,7 @@ Source: www.cypressindustries.com</description>
 <label x="137.16" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="16"/>
 <wire x1="134.62" y1="-38.1" x2="137.16" y2="-38.1" width="0.1524" layer="91"/>
@@ -15215,7 +15205,7 @@ J1850 VPW and CAN Interface for GM</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="IC4" gate="G$1" pin="IN"/>
